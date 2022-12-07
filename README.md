@@ -15,7 +15,7 @@ the job. Please balance execution speed and code quality.
 
 Build a wallet and allow a user to add their cards to that wallet. The wire frames below explain the flow and components we'd like to see in your application. Feel free to get creative and modify the interactions. Also, feel free to implement whatever styling you like.
 
-![mockup](https://user-images.githubusercontent.com/10040882/206075292-d99818f4-3ccb-4761-893b-32ec5b9ac367.png)
+![mockup](https://user-images.githubusercontent.com/10040882/206077291-eb0628c7-0ae2-4cb5-b2c9-a941280a4bd2.png)
 
 
 
