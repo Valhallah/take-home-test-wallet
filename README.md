@@ -15,11 +15,23 @@ the job. Please balance execution speed and code quality.
 
 Build a wallet and allow a user to add their cards to that wallet. The wire frames below explain the flow and components we'd like to see in your application. Feel free to get creative and modify the interactions. Also, feel free to implement whatever styling you like.
 
+![mockup](https://user-images.githubusercontent.com/10040882/206075292-d99818f4-3ccb-4761-893b-32ec5b9ac367.png)
+
+
+
 *Extra credit: add your component library to a locally run [Storybook](https://storybook.js.org/).*
 
 ### Iteration 1
 
-Hook up your "add a card" component to the server contained in this repository. See instructions in a section below on how to run the server on your local machine. Save the card(s) to local state. Do not assume the server will store the cards the user adds to their wallet. Moreover, ensure your application can handle errors returned by the server. Invalid parameters in the HTTP request will yield an error response. For example, a card number that is less than 16 characters will produce an error. Make sure to display errors to the user.
+Hook up your "add a card" component to the server contained in this repository. (See instructions in a section below on how to run the server on your local machine). Save the card(s) to local state. Do not assume the server will store the cards the user adds to their wallet. Moreover, ensure your application can handle errors returned by the server. Invalid parameters in the HTTP request will yield an error response. For example, a card number that is less than 16 characters will produce an error. Make sure to display errors to the user.
+
+**Method:** POST
+<br/>
+**Endpoint:** /api/payment_methods
+<br/>
+**URL:** http://localhost:8080
+<br/>
+**Request body** (content/json): { "type": enum[ "ebt", "credit", "debit"], "number": string }. Example: { "type": "ebt", "number": "1234567890123456" }
 
 ### Testing
 
